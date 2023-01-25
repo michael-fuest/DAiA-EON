@@ -4,12 +4,11 @@ import numpy as np
 
 class WindowGenerator():
     def __init__(self, input_width, label_width, shift,
-                train_df, val_df, test_df,
+                train_df, val_df,
                 label_columns=None):
         # Store the raw data.
         self.train_df = train_df
         self.val_df = val_df
-        self.test_df = test_df
 
         # Work out the label column indices.
         self.label_columns = label_columns
@@ -109,10 +108,6 @@ class WindowGenerator():
     @property
     def val(self):
         return self.make_dataset(self.val_df)
-
-    @property
-    def test(self):
-        return self.make_dataset(self.test_df)
 
     @property
     def example(self):
