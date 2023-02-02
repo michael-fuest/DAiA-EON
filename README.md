@@ -31,6 +31,12 @@ Notebook for data exploration, visualization and descriptive analysis for price 
 -> Timeseries.ipynb
 Notebook for timeseries forecasting experiments, which outputs aggregated predictions for around 900 postcodes for both power and gas pricing data.
 
+->Explore_PLZ.ipynb
+Notebook for visualizing regional distribution of our data in plotly
+
+-> Add_PLZ.ipynb
+Notebook for incorporating post code data
+
 
 ## Credits ##
 
